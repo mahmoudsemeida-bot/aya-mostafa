@@ -1,0 +1,2463 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أنوثة كلينك - د. آية محمد مصطفى | التجميل النسائي والتوليد</title>
+    <meta name="description" content="عيادة أنوثة كلينك للتجميل النسائي والتوليد مع د. آية محمد مصطفى - رعاية طبية متخصصة للمرأة بخبرة واهتمام في الفيوم.">
+    <meta name="keywords" content="عيادة نساء, تجميل نسائي, توليد, د. آية محمد مصطفى, الفيوم, أنوثة كلينك">
+    <meta name="author" content="د. آية محمد مصطفى">
+    <meta property="og:title" content="أنوثة كلينك - د. آية محمد مصطفى">
+    <meta property="og:description" content="عيادة أنوثة كلينك للتجميل النسائي والتوليد - رعاية متخصصة للمرأة">
+    <meta property="og:type" content="website">
+
+    <!-- Google Fonts - Cairo & Tajawal for premium Arabic typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Tajawal:wght@300;400;500;700;800;900&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        /* ==================== CSS VARIABLES ==================== */
+        :root {
+            --primary: #C21875;
+            --secondary: #E91E63;
+            --soft-pink: #FCE7F3;
+            --white: #FFFFFF;
+            --dark: #1F2937;
+            --gray-50: #FDF2F8;
+            --gray-100: #F9FAFB;
+            --gray-200: #F3F4F6;
+            --gray-300: #E5E7EB;
+            --gray-600: #4B5563;
+            --gray-700: #374151;
+            --gradient-primary: linear-gradient(135deg, #C21875 0%, #E91E63 100%);
+            --gradient-soft: linear-gradient(135deg, #FCE7F3 0%, #FDF2F8 100%);
+            --gradient-overlay: linear-gradient(135deg, rgba(194, 24, 117, 0.85) 0%, rgba(233, 30, 99, 0.7) 50%, rgba(31, 41, 55, 0.8) 100%);
+            --shadow-sm: 0 2px 8px rgba(194, 24, 117, 0.08);
+            --shadow-md: 0 8px 24px rgba(194, 24, 117, 0.12);
+            --shadow-lg: 0 20px 50px rgba(194, 24, 117, 0.15);
+            --shadow-xl: 0 25px 70px rgba(194, 24, 117, 0.2);
+            --radius-sm: 12px;
+            --radius-md: 20px;
+            --radius-lg: 30px;
+            --radius-xl: 40px;
+            --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        /* ==================== RESET & BASE ==================== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+
+        body {
+            font-family: 'Tajawal', 'Cairo', sans-serif;
+            color: var(--dark);
+            background: var(--white);
+            line-height: 1.7;
+            overflow-x: hidden;
+            direction: rtl;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Cairo', sans-serif;
+            font-weight: 700;
+            line-height: 1.3;
+            color: var(--dark);
+        }
+
+        a { text-decoration: none; color: inherit; }
+        button { font-family: inherit; cursor: pointer; border: none; outline: none; }
+        ul { list-style: none; }
+        img { max-width: 100%; height: auto; display: block; }
+
+        /* ==================== UTILITY CLASSES ==================== */
+        .container {
+            width: 100%;
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .section-padding {
+            padding: 100px 0;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-subtitle {
+            display: inline-block;
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--primary);
+            background: var(--soft-pink);
+            padding: 8px 20px;
+            border-radius: 50px;
+            margin-bottom: 16px;
+            letter-spacing: 0.5px;
+        }
+
+        .section-title {
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 800;
+            margin-bottom: 16px;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .section-desc {
+            font-size: 1.1rem;
+            color: var(--gray-600);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 14px 32px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1rem;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .btn-primary {
+            background: var(--gradient-primary);
+            color: var(--white);
+            box-shadow: var(--shadow-md);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .btn-whatsapp {
+            background: #25D366;
+            color: var(--white);
+            box-shadow: 0 8px 24px rgba(37, 211, 102, 0.3);
+        }
+
+        .btn-whatsapp:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(37, 211, 102, 0.4);
+        }
+
+        .btn-outline {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            color: var(--white);
+        }
+
+        .btn-outline:hover {
+            background: var(--white);
+            color: var(--primary);
+            transform: translateY(-3px);
+        }
+
+        /* ==================== GLASSMORPHISM CARD ==================== */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.8);
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-md);
+        }
+
+        /* ==================== NAVBAR ==================== */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 9999;
+            padding: 18px 0;
+            transition: var(--transition);
+            background: transparent;
+        }
+
+        .navbar.scrolled {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            box-shadow: var(--shadow-sm);
+            padding: 12px 0;
+        }
+
+        .nav-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-family: 'Cairo', sans-serif;
+        }
+
+        .logo-icon {
+            width: 48px;
+            height: 48px;
+            background: var(--gradient-primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 1.3rem;
+            box-shadow: var(--shadow-md);
+            position: relative;
+        }
+
+        .logo-icon::after {
+            content: '';
+            position: absolute;
+            inset: -3px;
+            border-radius: 50%;
+            background: var(--gradient-primary);
+            opacity: 0.3;
+            z-index: -1;
+            animation: pulse-ring 2s infinite;
+        }
+
+        @keyframes pulse-ring {
+            0% { transform: scale(1); opacity: 0.3; }
+            50% { transform: scale(1.15); opacity: 0; }
+            100% { transform: scale(1); opacity: 0; }
+        }
+
+        .logo-text h2 {
+            font-size: 1.4rem;
+            font-weight: 800;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1;
+        }
+
+        .logo-text span {
+            font-size: 0.75rem;
+            color: var(--gray-600);
+            font-weight: 500;
+        }
+
+        .navbar.scrolled .logo-text span { color: var(--gray-600); }
+
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .nav-link {
+            padding: 10px 18px;
+            font-weight: 600;
+            font-size: 0.98rem;
+            color: var(--white);
+            border-radius: 50px;
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .navbar.scrolled .nav-link {
+            color: var(--dark);
+        }
+
+        .nav-link:hover, .nav-link.active {
+            color: var(--primary);
+            background: var(--soft-pink);
+        }
+
+        .navbar.scrolled .nav-link:hover,
+        .navbar.scrolled .nav-link.active {
+            color: var(--primary);
+            background: var(--soft-pink);
+        }
+
+        .nav-cta {
+            padding: 11px 26px !important;
+            background: var(--gradient-primary) !important;
+            color: var(--white) !important;
+            box-shadow: var(--shadow-md);
+            margin-right: 10px;
+        }
+
+        .nav-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg) !important;
+            background: var(--gradient-primary) !important;
+        }
+
+        /* Mobile Menu */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            background: transparent;
+            padding: 8px;
+            z-index: 10000;
+        }
+
+        .hamburger span {
+            width: 26px;
+            height: 3px;
+            background: var(--white);
+            border-radius: 3px;
+            transition: var(--transition);
+        }
+
+        .navbar.scrolled .hamburger span { background: var(--primary); }
+
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(45deg) translate(7px, 7px);
+        }
+        .hamburger.active span:nth-child(2) { opacity: 0; }
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(7px, -7px);
+        }
+
+        /* Mobile Menu Overlay */
+        .mobile-menu {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 100%;
+            max-width: 360px;
+            height: 100vh;
+            background: var(--white);
+            padding: 100px 30px 40px;
+            z-index: 9998;
+            transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: -10px 0 50px rgba(0,0,0,0.1);
+            overflow-y: auto;
+        }
+
+        .mobile-menu.active { right: 0; }
+
+        .mobile-menu ul {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .mobile-menu .nav-link {
+            color: var(--dark);
+            display: block;
+            padding: 14px 20px;
+            font-size: 1.05rem;
+        }
+
+        .mobile-menu .nav-cta {
+            margin-top: 20px;
+            text-align: center;
+            color: var(--white) !important;
+        }
+
+        .menu-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.5);
+            backdrop-filter: blur(4px);
+            z-index: 9997;
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition);
+        }
+
+        .menu-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* ==================== HERO SECTION ==================== */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .hero-bg {
+            position: absolute;
+            inset: 0;
+            z-index: 0;
+        }
+
+        .hero-bg img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.25;
+            animation: heroZoom 12s ease-in-out infinite, heroFloat 12s ease-in-out infinite;
+        }
+
+        @keyframes heroZoom {
+            0%, 100% { transform: scale(1) translate(0, 0); }
+            50% { transform: scale(1.1) translate(-10px, -10px); }
+        }
+
+        @keyframes heroFloat {
+            0%, 100% { filter: brightness(1); }
+            50% { filter: brightness(1.1); }
+        }
+
+        .hero-overlay {
+            position: absolute;
+            inset: 0;
+            background: var(--gradient-overlay);
+            z-index: 1;
+        }
+
+        /* Decorative floating shapes */
+        .floating-shape {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(60px);
+            z-index: 1;
+            opacity: 0.4;
+        }
+
+        .shape-1 {
+            width: 400px;
+            height: 400px;
+            background: var(--secondary);
+            top: -100px;
+            right: -100px;
+            animation: floatShape 15s ease-in-out infinite;
+        }
+
+        .shape-2 {
+            width: 300px;
+            height: 300px;
+            background: var(--primary);
+            bottom: -80px;
+            left: -80px;
+            animation: floatShape 18s ease-in-out infinite reverse;
+        }
+
+        @keyframes floatShape {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            33% { transform: translate(30px, -30px) scale(1.1); }
+            66% { transform: translate(-20px, 20px) scale(0.95); }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 900px;
+            padding: 0 20px;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            padding: 10px 24px;
+            border-radius: 50px;
+            color: var(--white);
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: 28px;
+            animation: fadeInDown 1s ease;
+        }
+
+        .hero-badge i { color: #FFD700; }
+
+        .hero-title {
+            font-size: clamp(2.5rem, 6vw, 5rem);
+            font-weight: 900;
+            color: var(--white);
+            margin-bottom: 16px;
+            font-family: 'Cairo', sans-serif;
+            animation: fadeInUp 1s ease 0.2s both;
+            text-shadow: 0 4px 20px rgba(0,0,0,0.2);
+        }
+
+        .hero-title .highlight {
+            background: linear-gradient(90deg, #FFC1E3, #FCE7F3);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-subtitle {
+            font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+            color: rgba(255, 255, 255, 0.95);
+            font-weight: 500;
+            margin-bottom: 12px;
+            font-family: 'Cairo', sans-serif;
+            animation: fadeInUp 1s ease 0.4s both;
+        }
+
+        .hero-doctor {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            padding: 12px 28px;
+            border-radius: 50px;
+            color: var(--white);
+            font-size: 1.15rem;
+            font-weight: 700;
+            margin-bottom: 24px;
+            animation: fadeInUp 1s ease 0.5s both;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .hero-doctor i { color: #FFD700; }
+
+        .hero-desc {
+            font-size: 1.2rem;
+            color: rgba(255, 255, 255, 0.85);
+            margin-bottom: 40px;
+            max-width: 650px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.9;
+            animation: fadeInUp 1s ease 0.6s both;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+            animation: fadeInUp 1s ease 0.8s both;
+        }
+
+        .hero-buttons .btn {
+            padding: 16px 36px;
+            font-size: 1.05rem;
+        }
+
+        /* Scroll indicator */
+        .scroll-indicator {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 2;
+            color: var(--white);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.85rem;
+            opacity: 0.8;
+            animation: bounce 2s infinite;
+        }
+
+        .scroll-indicator .mouse {
+            width: 26px;
+            height: 42px;
+            border: 2px solid rgba(255,255,255,0.6);
+            border-radius: 20px;
+            position: relative;
+        }
+
+        .scroll-indicator .wheel {
+            width: 4px;
+            height: 8px;
+            background: var(--white);
+            border-radius: 2px;
+            position: absolute;
+            top: 8px;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: scrollWheel 1.5s infinite;
+        }
+
+        @keyframes scrollWheel {
+            0% { opacity: 1; transform: translateX(-50%) translateY(0); }
+            100% { opacity: 0; transform: translateX(-50%) translateY(15px); }
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateX(-50%) translateY(0); }
+            50% { transform: translateX(-50%) translateY(-10px); }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* ==================== ABOUT DOCTOR SECTION ==================== */
+        .about {
+            background: var(--white);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .about::before {
+            content: '';
+            position: absolute;
+            top: -200px;
+            left: -200px;
+            width: 500px;
+            height: 500px;
+            background: var(--soft-pink);
+            border-radius: 50%;
+            opacity: 0.4;
+            filter: blur(80px);
+        }
+
+        .about-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .about-image {
+            position: relative;
+        }
+
+        .about-image-wrapper {
+            position: relative;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-xl);
+        }
+
+        .about-image-wrapper img {
+            width: 100%;
+            height: 600px;
+            object-fit: cover;
+            border-radius: var(--radius-lg);
+            transition: var(--transition);
+        }
+
+        .about-image:hover .about-image-wrapper img {
+            transform: scale(1.05);
+        }
+
+        .about-image-badge {
+            position: absolute;
+            bottom: 30px;
+            left: -20px;
+            background: var(--white);
+            padding: 20px 24px;
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-lg);
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            z-index: 2;
+            animation: floatBadge 4s ease-in-out infinite;
+        }
+
+        @keyframes floatBadge {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .about-image-badge .icon {
+            width: 50px;
+            height: 50px;
+            background: var(--gradient-primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 1.3rem;
+        }
+
+        .about-image-badge .info h4 {
+            font-size: 1.3rem;
+            color: var(--primary);
+            font-weight: 800;
+        }
+
+        .about-image-badge .info p {
+            font-size: 0.85rem;
+            color: var(--gray-600);
+        }
+
+        .about-shape {
+            position: absolute;
+            top: -20px;
+            right: -20px;
+            width: 150px;
+            height: 150px;
+            background: var(--gradient-primary);
+            border-radius: var(--radius-md);
+            z-index: -1;
+            opacity: 0.1;
+        }
+
+        .about-quote {
+            position: relative;
+            padding: 30px;
+            background: var(--soft-pink);
+            border-right: 4px solid var(--primary);
+            border-radius: var(--radius-sm);
+            margin-bottom: 30px;
+            font-size: 1.15rem;
+            color: var(--dark);
+            line-height: 1.9;
+            font-weight: 500;
+        }
+
+        .about-quote i {
+            color: var(--primary);
+            font-size: 2rem;
+            opacity: 0.3;
+            position: absolute;
+            top: 15px;
+            right: 20px;
+        }
+
+        .about-text .section-subtitle { margin-bottom: 12px; }
+        .about-text .section-title { text-align: right; font-size: clamp(1.8rem, 3vw, 2.5rem); }
+
+        .about-doctor-name {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .about-doctor-name i { color: var(--primary); }
+
+        .about-features {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            margin-top: 30px;
+        }
+
+        .about-feature {
+            background: var(--white);
+            padding: 22px 16px;
+            border-radius: var(--radius-md);
+            text-align: center;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+            border: 1px solid var(--gray-200);
+        }
+
+        .about-feature:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--soft-pink);
+        }
+
+        .about-feature .icon {
+            width: 55px;
+            height: 55px;
+            background: var(--gradient-primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 1.4rem;
+            margin: 0 auto 12px;
+            transition: var(--transition);
+        }
+
+        .about-feature:hover .icon {
+            transform: rotate(10deg) scale(1.1);
+        }
+
+        .about-feature h4 {
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--dark);
+        }
+
+        /* ==================== SERVICES SECTION ==================== */
+        .services {
+            background: linear-gradient(180deg, var(--gray-50) 0%, var(--white) 100%);
+            position: relative;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 28px;
+        }
+
+        .service-card {
+            background: var(--white);
+            padding: 40px 30px;
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+            border: 1px solid var(--gray-200);
+            z-index: 1;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--gradient-primary);
+            transform: scaleX(0);
+            transition: var(--transition);
+            z-index: 2;
+        }
+
+        .service-card::after {
+            content: '';
+            position: absolute;
+            bottom: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: var(--gradient-primary);
+            opacity: 0;
+            transition: var(--transition);
+            z-index: -1;
+            border-radius: 50%;
+        }
+
+        .service-card:hover {
+            transform: translateY(-15px);
+            box-shadow: var(--shadow-xl);
+            border-color: transparent;
+        }
+
+        .service-card:hover::before { transform: scaleX(1); }
+        .service-card:hover::after {
+            opacity: 0.03;
+            transform: scale(1.2);
+        }
+
+        .service-card:hover .service-icon {
+            background: var(--white);
+            color: var(--primary);
+            transform: rotateY(180deg);
+        }
+
+        .service-card:hover .service-title,
+        .service-card:hover .service-desc {
+            color: var(--dark);
+        }
+
+        .service-card:hover .service-arrow {
+            background: var(--primary);
+            color: var(--white);
+        }
+
+        .service-icon {
+            width: 75px;
+            height: 75px;
+            background: var(--soft-pink);
+            border-radius: 22px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary);
+            font-size: 2rem;
+            margin-bottom: 24px;
+            transition: var(--transition);
+        }
+
+        .service-number {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 3rem;
+            font-weight: 900;
+            color: var(--soft-pink);
+            font-family: 'Playfair Display', serif;
+            z-index: 0;
+        }
+
+        .service-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+            color: var(--dark);
+            transition: var(--transition);
+            position: relative;
+            z-index: 1;
+        }
+
+        .service-desc {
+            color: var(--gray-600);
+            font-size: 0.98rem;
+            line-height: 1.8;
+            position: relative;
+            z-index: 1;
+        }
+
+        .service-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 24px;
+            padding-top: 20px;
+            border-top: 1px solid var(--gray-200);
+            position: relative;
+            z-index: 1;
+        }
+
+        .service-footer span {
+            font-size: 0.9rem;
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        .service-arrow {
+            width: 40px;
+            height: 40px;
+            background: var(--soft-pink);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary);
+            transition: var(--transition);
+        }
+
+        /* ==================== WHY CHOOSE US ==================== */
+        .why-us {
+            background: var(--gradient-primary);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .why-us::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            opacity: 0.5;
+        }
+
+        .why-us .section-title {
+            background: linear-gradient(90deg, #fff, #fce7f3);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .why-us .section-subtitle {
+            background: rgba(255,255,255,0.15);
+            color: var(--white);
+        }
+
+        .why-us .section-desc {
+            color: rgba(255,255,255,0.9);
+        }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 24px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .why-card {
+            background: rgba(255, 255, 255, 0.12);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 36px 28px;
+            border-radius: var(--radius-md);
+            text-align: center;
+            transition: var(--transition);
+        }
+
+        .why-card:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-10px);
+            border-color: rgba(255, 255, 255, 0.4);
+        }
+
+        .why-icon {
+            width: 80px;
+            height: 80px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 2rem;
+            margin: 0 auto 20px;
+            transition: var(--transition);
+        }
+
+        .why-card:hover .why-icon {
+            background: var(--white);
+            color: var(--primary);
+            transform: scale(1.1) rotate(10deg);
+        }
+
+        .why-card h3 {
+            color: var(--white);
+            font-size: 1.25rem;
+            margin-bottom: 10px;
+        }
+
+        .why-card p {
+            color: rgba(255, 255, 255, 0.85);
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        /* ==================== BOOKING SECTION ==================== */
+        .booking {
+            background: linear-gradient(135deg, var(--white) 0%, var(--soft-pink) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .booking::before {
+            content: '';
+            position: absolute;
+            top: -200px;
+            right: -200px;
+            width: 500px;
+            height: 500px;
+            background: var(--primary);
+            border-radius: 50%;
+            opacity: 0.05;
+            filter: blur(80px);
+        }
+
+        .booking-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .booking-info h2 {
+            font-size: clamp(1.8rem, 3vw, 2.5rem);
+            font-weight: 800;
+            margin-bottom: 16px;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .booking-info > p {
+            color: var(--gray-600);
+            font-size: 1.05rem;
+            margin-bottom: 30px;
+            line-height: 1.9;
+        }
+
+        .booking-contact {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            margin-bottom: 30px;
+        }
+
+        .booking-contact-item {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 18px 22px;
+            background: var(--white);
+            border-radius: var(--radius-sm);
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+        }
+
+        .booking-contact-item:hover {
+            transform: translateX(-8px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .booking-contact-item .icon {
+            width: 48px;
+            height: 48px;
+            background: var(--gradient-primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+
+        .booking-contact-item h4 {
+            font-size: 1rem;
+            color: var(--primary);
+            margin-bottom: 2px;
+        }
+
+        .booking-contact-item p {
+            font-size: 0.95rem;
+            color: var(--gray-600);
+            font-weight: 500;
+        }
+
+        .booking-form {
+            background: var(--white);
+            padding: 40px;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-lg);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .booking-form::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: var(--gradient-primary);
+        }
+
+        .form-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .form-header h3 {
+            font-size: 1.6rem;
+            font-weight: 800;
+            color: var(--dark);
+            margin-bottom: 8px;
+        }
+
+        .form-header p {
+            color: var(--gray-600);
+            font-size: 0.95rem;
+        }
+
+        .form-group {
+            margin-bottom: 18px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: 600;
+            font-size: 0.92rem;
+            color: var(--dark);
+            margin-bottom: 8px;
+        }
+
+        .form-group label i {
+            color: var(--primary);
+            margin-left: 6px;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 14px 18px;
+            border: 2px solid var(--gray-200);
+            border-radius: var(--radius-sm);
+            font-family: inherit;
+            font-size: 0.98rem;
+            color: var(--dark);
+            background: var(--gray-100);
+            transition: var(--transition);
+            text-align: right;
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--primary);
+            background: var(--white);
+            box-shadow: 0 0 0 4px rgba(194, 24, 117, 0.1);
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+
+        select.form-control {
+            appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%23C21875' viewBox='0 0 16 16'%3E%3Cpath d='M8 11L3 6h10z'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: left 18px center;
+            padding-left: 40px;
+        }
+
+        .form-submit {
+            width: 100%;
+            padding: 16px;
+            background: var(--gradient-primary);
+            color: var(--white);
+            border-radius: var(--radius-sm);
+            font-weight: 700;
+            font-size: 1.05rem;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 10px;
+            box-shadow: var(--shadow-md);
+        }
+
+        .form-submit:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .form-note {
+            text-align: center;
+            margin-top: 16px;
+            font-size: 0.85rem;
+            color: var(--gray-600);
+        }
+
+        .form-note i {
+            color: #25D366;
+            margin-left: 4px;
+        }
+
+        /* ==================== CONTACT SECTION ==================== */
+        .contact {
+            background: var(--dark);
+            color: var(--white);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--primary), transparent);
+        }
+
+        .contact .section-title {
+            background: linear-gradient(90deg, #fff, #FCE7F3);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .contact .section-desc { color: rgba(255,255,255,0.7); }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 24px;
+        }
+
+        .contact-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 36px 28px;
+            border-radius: var(--radius-md);
+            text-align: center;
+            transition: var(--transition);
+        }
+
+        .contact-card:hover {
+            background: rgba(255, 255, 255, 0.08);
+            transform: translateY(-10px);
+            border-color: var(--primary);
+        }
+
+        .contact-icon {
+            width: 70px;
+            height: 70px;
+            background: var(--gradient-primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 1.6rem;
+            margin: 0 auto 20px;
+            box-shadow: var(--shadow-md);
+            transition: var(--transition);
+        }
+
+        .contact-card:hover .contact-icon {
+            transform: scale(1.15);
+        }
+
+        .contact-card h3 {
+            color: var(--white);
+            font-size: 1.2rem;
+            margin-bottom: 12px;
+        }
+
+        .contact-card p {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.95rem;
+            line-height: 1.8;
+        }
+
+        .contact-card a {
+            color: var(--white);
+            transition: var(--transition);
+        }
+
+        .contact-card a:hover { color: var(--secondary); }
+
+        .facebook-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 16px;
+            padding: 12px 24px;
+            background: #1877F2;
+            color: var(--white) !important;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: var(--transition);
+        }
+
+        .facebook-btn:hover {
+            background: #166FE5;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(24, 119, 242, 0.4);
+        }
+
+        /* Map / CTA Banner */
+        .contact-cta {
+            margin-top: 50px;
+            background: var(--gradient-primary);
+            padding: 40px;
+            border-radius: var(--radius-lg);
+            text-align: center;
+            box-shadow: var(--shadow-xl);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact-cta::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 1c-2.757 0-5 2.243-5 5v88c0 2.757 2.243 5 5 5h78c2.757 0 5-2.243 5-5V26l-25-25H11z' fill='%23ffffff' fill-opacity='0.05'/%3E%3C/svg%3E");
+            opacity: 0.3;
+        }
+
+        .contact-cta h3 {
+            color: var(--white);
+            font-size: 1.6rem;
+            margin-bottom: 12px;
+            position: relative;
+        }
+
+        .contact-cta p {
+            color: rgba(255,255,255,0.9);
+            font-size: 1.05rem;
+            margin-bottom: 24px;
+            position: relative;
+        }
+
+        .contact-cta .btn {
+            background: var(--white);
+            color: var(--primary);
+            margin: 5px;
+            position: relative;
+        }
+
+        .contact-cta .btn:hover {
+            background: var(--dark);
+            color: var(--white);
+        }
+
+        .contact-cta .btn.btn-whatsapp {
+            background: #25D366;
+            color: var(--white);
+        }
+
+        .contact-cta .btn.btn-whatsapp:hover {
+            background: #128C7E;
+        }
+
+        /* ==================== FOOTER ==================== */
+        .footer {
+            background: #0F172A;
+            padding: 60px 0 30px;
+            color: var(--white);
+            position: relative;
+        }
+
+        .footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--primary), transparent);
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-brand .logo {
+            margin-bottom: 20px;
+        }
+
+        .footer-brand .logo-text h2 {
+            background: linear-gradient(90deg, #fff, #FCE7F3);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .footer-brand .logo-text span { color: rgba(255,255,255,0.7); }
+
+        .footer-brand > p {
+            color: rgba(255, 255, 255, 0.7);
+            line-height: 1.9;
+            margin-bottom: 24px;
+            font-size: 0.95rem;
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 12px;
+        }
+
+        .footer-social a {
+            width: 42px;
+            height: 42px;
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            transition: var(--transition);
+            font-size: 1rem;
+        }
+
+        .footer-social a:hover {
+            background: var(--primary);
+            transform: translateY(-3px);
+        }
+
+        .footer-col h4 {
+            color: var(--white);
+            font-size: 1.15rem;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .footer-col h4::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 40px;
+            height: 3px;
+            background: var(--gradient-primary);
+            border-radius: 2px;
+        }
+
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.95rem;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .footer-links a i {
+            color: var(--primary);
+            font-size: 0.8rem;
+        }
+
+        .footer-links a:hover {
+            color: var(--secondary);
+            padding-right: 8px;
+        }
+
+        .footer-contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        .footer-contact-info div {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.92rem;
+            line-height: 1.7;
+        }
+
+        .footer-contact-info i {
+            color: var(--primary);
+            margin-top: 4px;
+            flex-shrink: 0;
+        }
+
+        .footer-bottom {
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.9rem;
+        }
+
+        .footer-bottom .heart {
+            color: var(--secondary);
+            animation: heartBeat 1.5s infinite;
+            display: inline-block;
+        }
+
+        @keyframes heartBeat {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+        }
+
+        /* ==================== BACK TO TOP ==================== */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            width: 50px;
+            height: 50px;
+            background: var(--gradient-primary);
+            color: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            box-shadow: var(--shadow-lg);
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition);
+            z-index: 999;
+            border: none;
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .back-to-top:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        /* ==================== WHATSAPP FLOATING BUTTON ==================== */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background: #25D366;
+            color: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            box-shadow: 0 10px 30px rgba(37, 211, 102, 0.4);
+            z-index: 999;
+            transition: var(--transition);
+            animation: whatsappPulse 2s infinite;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            background: #128C7E;
+        }
+
+        @keyframes whatsappPulse {
+            0%, 100% { box-shadow: 0 10px 30px rgba(37, 211, 102, 0.4); }
+            50% { box-shadow: 0 10px 40px rgba(37, 211, 102, 0.7), 0 0 0 15px rgba(37, 211, 102, 0.1); }
+        }
+
+        /* ==================== SCROLL REVEAL (AOS overrides) ==================== */
+        [data-aos] {
+            pointer-events: none;
+        }
+        [data-aos].aos-animate {
+            pointer-events: auto;
+        }
+
+        /* ==================== RESPONSIVE DESIGN ==================== */
+        @media (max-width: 1024px) {
+            .section-padding { padding: 80px 0; }
+            .about-wrapper,
+            .booking-wrapper {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            .about-image-wrapper img { height: 500px; }
+            .footer-grid { grid-template-columns: 1fr 1fr; }
+            .footer-brand { grid-column: 1 / -1; }
+        }
+
+        @media (max-width: 768px) {
+            .section-padding { padding: 70px 0; }
+            .nav-menu { display: none; }
+            .hamburger { display: flex; }
+
+            .hero-buttons { flex-direction: column; width: 100%; max-width: 320px; margin: 0 auto; }
+            .hero-buttons .btn { width: 100%; justify-content: center; }
+
+            .about-features { grid-template-columns: 1fr; }
+            .form-row { grid-template-columns: 1fr; }
+            .booking-form { padding: 28px 22px; }
+            .footer-grid { grid-template-columns: 1fr; text-align: center; }
+            .footer-col h4::after { right: 50%; transform: translateX(50%); }
+            .footer-social { justify-content: center; }
+            .footer-contact-info div { justify-content: center; text-align: center; }
+            .footer-links a { justify-content: center; }
+
+            .about-image-badge {
+                left: 10px;
+                bottom: 10px;
+                padding: 14px 18px;
+            }
+            .contact-cta { padding: 30px 20px; }
+        }
+
+        @media (max-width: 480px) {
+            .container { padding: 0 15px; }
+            .section-padding { padding: 60px 0; }
+            .hero-doctor { font-size: 1rem; padding: 10px 20px; }
+            .about-image-wrapper img { height: 400px; }
+            .service-card { padding: 30px 24px; }
+            .whatsapp-float { width: 52px; height: 52px; font-size: 1.5rem; bottom: 20px; right: 20px; }
+            .back-to-top { width: 44px; height: 44px; bottom: 20px; left: 20px; }
+        }
+
+        /* Scrollbar styling */
+        ::-webkit-scrollbar { width: 10px; }
+        ::-webkit-scrollbar-track { background: var(--gray-100); }
+        ::-webkit-scrollbar-thumb {
+            background: var(--gradient-primary);
+            border-radius: 5px;
+        }
+        ::-webkit-scrollbar-thumb:hover { background: var(--primary); }
+
+        /* Selection */
+        ::selection {
+            background: var(--primary);
+            color: var(--white);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ==================== NAVBAR ==================== -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="#home" class="logo">
+                    <div class="logo-icon">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h2>أنوثة كلينك</h2>
+                        <span>د. آية محمد مصطفى</span>
+                    </div>
+                </a>
+
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link active">الرئيسية</a></li>
+                    <li><a href="#about" class="nav-link">عن الطبيبة</a></li>
+                    <li><a href="#services" class="nav-link">الخدمات</a></li>
+                    <li><a href="#booking" class="nav-link">الحجز</a></li>
+                    <li><a href="#contact" class="nav-link">تواصل</a></li>
+                    <li><a href="#booking" class="nav-link nav-cta">احجزي موعد</a></li>
+                </ul>
+
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="#home" class="nav-link">الرئيسية</a></li>
+            <li><a href="#about" class="nav-link">عن الطبيبة</a></li>
+            <li><a href="#services" class="nav-link">الخدمات</a></li>
+            <li><a href="#booking" class="nav-link">الحجز</a></li>
+            <li><a href="#contact" class="nav-link">تواصل</a></li>
+            <li><a href="#booking" class="nav-link nav-cta">احجزي موعد</a></li>
+        </ul>
+    </div>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=1920&q=80" alt="عيادة أنوثة كلينك">
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="floating-shape shape-1"></div>
+        <div class="floating-shape shape-2"></div>
+
+        <div class="hero-content">
+            <div class="hero-badge">
+                <i class="fa-solid fa-star"></i>
+                <span>رعاية نسائية متكاملة بمعايير عالمية</span>
+            </div>
+
+            <h1 class="hero-title">
+                أنوثة <span class="highlight">كلينك</span>
+            </h1>
+
+            <p class="hero-subtitle">للتجميل النسائي والتوليد</p>
+
+            <div class="hero-doctor">
+                <i class="fa-solid fa-user-doctor"></i>
+                <span>د. آية محمد مصطفى</span>
+            </div>
+
+            <p class="hero-desc">
+                رعاية طبية متخصصة للمرأة بخبرة واهتمام في كل مراحل حياتها
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#booking" class="btn btn-primary">
+                    <i class="fa-solid fa-calendar-check"></i>
+                    احجزي موعد الآن
+                </a>
+                <a href="#" class="btn btn-whatsapp" id="heroWhatsapp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    واتساب
+                </a>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>اسحبي للأسفل</span>
+        </div>
+    </section>
+
+    <!-- ==================== ABOUT DOCTOR ==================== -->
+    <section class="about section-padding" id="about">
+        <div class="container">
+            <div class="about-wrapper">
+                <div class="about-image" data-aos="fade-right">
+                    <div class="about-shape"></div>
+                    <div class="about-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=800&q=80" alt="د. آية محمد مصطفى">
+                    </div>
+                    <div class="about-image-badge">
+                        <div class="icon">
+                            <i class="fa-solid fa-award"></i>
+                        </div>
+                        <div class="info">
+                            <h4>+10 سنوات</h4>
+                            <p>خبرة طبية</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-text" data-aos="fade-left">
+                    <span class="section-subtitle"><i class="fa-solid fa-user-doctor"></i> عن الطبيبة</span>
+                    <h2 class="section-title">د. آية محمد مصطفى</h2>
+                    <div class="about-doctor-name">
+                        <i class="fa-solid fa-stethoscope"></i>
+                        <span>استشارية النساء والتوليد والتجميل النسائي</span>
+                    </div>
+
+                    <div class="about-quote">
+                        <i class="fa-solid fa-quote-right"></i>
+                        <p>"نقدم رعاية متخصصة في مجال النساء والتوليد والتجميل النسائي مع الاهتمام براحة وثقة كل سيدة."</p>
+                    </div>
+
+                    <p style="color: var(--gray-600); margin-bottom: 10px; line-height: 1.9;">
+                        نؤمن في عيادة <strong>أنوثة كلينك</strong> أن كل سيدة تستحق رعاية طبية متميزة تجمع بين الخبرة العلمية واللمسة الإنسانية. نحرص على تقديم أحدث التقنيات الطبية في بيئة آمنة وخاصة تضمن الراحة والثقة.
+                    </p>
+
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <div class="icon"><i class="fa-solid fa-briefcase-medical"></i></div>
+                            <h4>خبرة طبية</h4>
+                        </div>
+                        <div class="about-feature">
+                            <div class="icon"><i class="fa-solid fa-hand-holding-heart"></i></div>
+                            <h4>رعاية مخصصة</h4>
+                        </div>
+                        <div class="about-feature">
+                            <div class="icon"><i class="fa-solid fa-shield-halved"></i></div>
+                            <h4>خصوصية تامة</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SERVICES ==================== -->
+    <section class="services section-padding" id="services">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle"><i class="fa-solid fa-list-check"></i> خدماتنا</span>
+                <h2 class="section-title">خدماتنا الطبية المتخصصة</h2>
+                <p class="section-desc">نقدم مجموعة شاملة من الخدمات الطبية للعناية بصحة المرأة وجمالها</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="0">
+                    <span class="service-number">01</span>
+                    <div class="service-icon"><i class="fa-solid fa-baby"></i></div>
+                    <h3 class="service-title">متابعة الحمل</h3>
+                    <p class="service-desc">متابعة دقيقة وشاملة لمراحل الحمل كافة بأحدث الأجهزة الطبية لضمان صحة الأم والجنين.</p>
+                    <div class="service-footer">
+                        <span>احجزي استشارة</span>
+                        <div class="service-arrow"><i class="fa-solid fa-arrow-left"></i></div>
+                    </div>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <span class="service-number">02</span>
+                    <div class="service-icon"><i class="fa-solid fa-venus"></i></div>
+                    <h3 class="service-title">متابعة صحة المرأة</h3>
+                    <p class="service-desc">فحوصات دورية شاملة للكشف المبكر عن أمراض النساء والحفاظ على الصحة الإنجابية.</p>
+                    <div class="service-footer">
+                        <span>احجزي استشارة</span>
+                        <div class="service-arrow"><i class="fa-solid fa-arrow-left"></i></div>
+                    </div>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <span class="service-number">03</span>
+                    <div class="service-icon"><i class="fa-solid fa-spa"></i></div>
+                    <h3 class="service-title">التجميل النسائي</h3>
+                    <p class="service-desc">أحدث تقنيات التجميل النسائي الآمنة والفعالة لاستعادة الثقة والراحة النفسية.</p>
+                    <div class="service-footer">
+                        <span>احجزي استشارة</span>
+                        <div class="service-arrow"><i class="fa-solid fa-arrow-left"></i></div>
+                    </div>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="0">
+                    <span class="service-number">04</span>
+                    <div class="service-icon"><i class="fa-solid fa-stethoscope"></i></div>
+                    <h3 class="service-title">مشاكل النساء</h3>
+                    <p class="service-desc">تشخيص وعلاج مختلف أمراض ومشاكل النساء بأحدث البروتوكولات الطبية العالمية.</p>
+                    <div class="service-footer">
+                        <span>احجزي استشارة</span>
+                        <div class="service-arrow"><i class="fa-solid fa-arrow-left"></i></div>
+                    </div>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <span class="service-number">05</span>
+                    <div class="service-icon"><i class="fa-solid fa-hands-holding-child"></i></div>
+                    <h3 class="service-title">متابعة ما بعد الولادة</h3>
+                    <p class="service-desc">رعاية متكاملة للأم بعد الولادة لمتابعة التعافي وتقديم النصائح الطبية اللازمة.</p>
+                    <div class="service-footer">
+                        <span>احجزي استشارة</span>
+                        <div class="service-arrow"><i class="fa-solid fa-arrow-left"></i></div>
+                    </div>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <span class="service-number">06</span>
+                    <div class="service-icon"><i class="fa-solid fa-comments-medical"></i></div>
+                    <h3 class="service-title">الاستشارات الطبية</h3>
+                    <p class="service-desc">استشارات طبية دقيقة ومتخصصة للرد على جميع استفساراتك الصحية بسرية تامة.</p>
+                    <div class="service-footer">
+                        <span>احجزي استشارة</span>
+                        <div class="service-arrow"><i class="fa-solid fa-arrow-left"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== WHY CHOOSE US ==================== -->
+    <section class="why-us section-padding">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle"><i class="fa-solid fa-circle-check"></i> لماذا نحن</span>
+                <h2 class="section-title">لماذا تختارين أنوثة كلينك؟</h2>
+                <p class="section-desc">نحن نجمع بين الخبرة الطبية العالية والرعاية الإنسانية لنقدم لكِ أفضل تجربة</p>
+            </div>
+
+            <div class="why-grid">
+                <div class="why-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="why-icon"><i class="fa-solid fa-star"></i></div>
+                    <h3>رعاية متميزة</h3>
+                    <p>نقدم أعلى معايير الرعاية الصحية بأحدث التقنيات والأجهزة الطبية المتطورة</p>
+                </div>
+
+                <div class="why-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="why-icon"><i class="fa-solid fa-shield-heart"></i></div>
+                    <h3>بيئة آمنة</h3>
+                    <p>بيئة طبية معقمة وآمنة بالكامل تطبق أعلى معايير مكافحة العدوى والجودة</p>
+                </div>
+
+                <div class="why-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="why-icon"><i class="fa-solid fa-lock"></i></div>
+                    <h3>خصوصية كاملة</h3>
+                    <p>نضمن لكِ السرية والخصوصية التامة في جميع التعاملات والكشوفات الطبية</p>
+                </div>
+
+                <div class="why-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="why-icon"><i class="fa-solid fa-phone-volume"></i></div>
+                    <h3>متابعة مستمرة</h3>
+                    <p>متابعة دائمة قبل وأثناء وبعد العلاج لضمان أفضل النتائج والرعاية المستمرة</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== BOOKING SECTION ==================== -->
+    <section class="booking section-padding" id="booking">
+        <div class="container">
+            <div class="booking-wrapper">
+                <div class="booking-info" data-aos="fade-right">
+                    <span class="section-subtitle"><i class="fa-solid fa-calendar-days"></i> احجزي موعدك</span>
+                    <h2>احجزي استشارتك الآن</h2>
+                    <p>تواصلي معنا مباشرة عبر الواتساب لحجز موعدك أو لمعرفة المزيد عن خدماتنا الطبية المتخصصة. نحن هنا لرعايتك.</p>
+
+                    <div class="booking-contact">
+                        <div class="booking-contact-item">
+                            <div class="icon"><i class="fa-brands fa-whatsapp"></i></div>
+                            <div>
+                                <h4>واتساب / هاتف</h4>
+                                <p dir="ltr" style="text-align: right;">01016006205</p>
+                            </div>
+                        </div>
+                        <div class="booking-contact-item">
+                            <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div>
+                                <h4>العنوان</h4>
+                                <p>الفيوم - العبودي - بجوار مستشفى الندى</p>
+                            </div>
+                        </div>
+                        <div class="booking-contact-item">
+                            <div class="icon"><i class="fa-regular fa-clock"></i></div>
+                            <div>
+                                <h4>مواعيد العمل</h4>
+                                <p>السبت - الخميس: 4 م - 10 م</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="booking-form" data-aos="fade-left">
+                    <div class="form-header">
+                        <h3><i class="fa-solid fa-calendar-check" style="color: var(--primary); margin-left: 8px;"></i>نموذج الحجز</h3>
+                        <p>سيتواصل معكِ العيادة لتأكيد الموعد</p>
+                    </div>
+
+                    <form id="bookingForm">
+                        <div class="form-group">
+                            <label for="patientName"><i class="fa-solid fa-user"></i> اسم المريضة</label>
+                            <input type="text" id="patientName" class="form-control" placeholder="ادخلي اسمك الكامل" required>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="patientPhone"><i class="fa-solid fa-phone"></i> رقم الهاتف</label>
+                                <input type="tel" id="patientPhone" class="form-control" placeholder="01xxxxxxxxx" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="serviceType"><i class="fa-solid fa-list"></i> نوع الخدمة</label>
+                                <select id="serviceType" class="form-control" required>
+                                    <option value="">اختري الخدمة</option>
+                                    <option value="متابعة الحمل">متابعة الحمل</option>
+                                    <option value="متابعة صحة المرأة">متابعة صحة المرأة</option>
+                                    <option value="التجميل النسائي">التجميل النسائي</option>
+                                    <option value="مشاكل النساء">مشاكل النساء</option>
+                                    <option value="متابعة ما بعد الولادة">متابعة ما بعد الولادة</option>
+                                    <option value="الاستشارات الطبية">الاستشارات الطبية</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="appointmentDate"><i class="fa-regular fa-calendar"></i> الموعد المناسب</label>
+                            <input type="text" id="appointmentDate" class="form-control" placeholder="مثلاً: الأحد 4 عصراً">
+                        </div>
+
+                        <button type="submit" class="form-submit">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            إرسال الحجز عبر واتساب
+                        </button>
+
+                        <p class="form-note">
+                            <i class="fa-solid fa-circle-info"></i>
+                            سيتم فتح واتساب برسالة جاهزة بالإدخال
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section class="contact section-padding" id="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle"><i class="fa-solid fa-paper-plane"></i> تواصلي معنا</span>
+                <h2 class="section-title">نحن في انتظار تواصلك</h2>
+                <p class="section-desc">لأي استفسار أو استشارة، لا تترددي في التواصل معنا</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                    <h3>العنوان</h3>
+                    <p>الفيوم - العبودي<br>بجوار مستشفى الندى<br>الجهة المقابلة للفيوم سكان<br>الدور الأول</p>
+                </div>
+
+                <div class="contact-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                    <h3>الهاتف</h3>
+                    <p>للحجز والاستفسار</p>
+                    <p style="margin-top: 10px; font-size: 1.2rem; font-weight: 700;" dir="ltr">
+                        <a href="tel:01016006205">01016006205</a>
+                    </p>
+                    <a href="https://wa.me/201016006205" target="_blank" class="facebook-btn" style="background: #25D366;">
+                        <i class="fa-brands fa-whatsapp"></i> واتساب
+                    </a>
+                </div>
+
+                <div class="contact-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="contact-icon"><i class="fa-regular fa-clock"></i></div>
+                    <h3>مواعيد العمل</h3>
+                    <p>
+                        السبت: 4 م - 10 م<br>
+                        الأحد: 4 م - 10 م<br>
+                        الاثنين: 4 م - 10 م<br>
+                        الثلاثاء: 4 م - 10 م<br>
+                        الأربعاء: 4 م - 10 م<br>
+                        الخميس: 4 م - 10 م<br>
+                        الجمعة: إجازة
+                    </p>
+                </div>
+
+                <div class="contact-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="contact-icon"><i class="fa-brands fa-facebook-f"></i></div>
+                    <h3>فيسبوك</h3>
+                    <p>تابعينا على صفحتنا<br>لأحدث الأخبار والعروض</p>
+                    <a href="https://www.facebook.com/DrAyaMohamedcenterfay" target="_blank" class="facebook-btn">
+                        <i class="fa-brands fa-facebook-f"></i> زيارة الصفحة
+                    </a>
+                </div>
+            </div>
+
+            <div class="contact-cta" data-aos="zoom-in">
+                <h3>هل أنتِ جاهزة لحجز موعدك؟</h3>
+                <p>احجزي الآن وابدئي رحلتك معنا للحصول على أفضل رعاية طبية</p>
+                <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+                    <a href="#booking" class="btn">
+                        <i class="fa-solid fa-calendar-check"></i> احجزي الآن
+                    </a>
+                    <a href="https://wa.me/201016006205?text=مرحبا، أرغب في حجز موعد في أنوثة كلينك" target="_blank" class="btn btn-whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i> واتساب فوري
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#home" class="logo">
+                        <div class="logo-icon">
+                            <i class="fa-solid fa-heart-pulse"></i>
+                        </div>
+                        <div class="logo-text">
+                            <h2>أنوثة كلينك</h2>
+                            <span>د. آية محمد مصطفى</span>
+                        </div>
+                    </a>
+                    <p>عيادة متخصصة في التجميل النسائي وأمراض النساء والتوليد، نقدم رعاية طبية متميزة بلمسة إنسانية تضمن راحتك وثقتك.</p>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/DrAyaMohamedcenterfay" target="_blank" title="فيسبوك"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://wa.me/201016006205" target="_blank" title="واتساب"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="tel:01016006205" title="اتصل بنا"><i class="fa-solid fa-phone"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>روابط سريعة</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home"><i class="fa-solid fa-chevron-left"></i> الرئيسية</a></li>
+                        <li><a href="#about"><i class="fa-solid fa-chevron-left"></i> عن الطبيبة</a></li>
+                        <li><a href="#services"><i class="fa-solid fa-chevron-left"></i> الخدمات</a></li>
+                        <li><a href="#booking"><i class="fa-solid fa-chevron-left"></i> الحجز</a></li>
+                        <li><a href="#contact"><i class="fa-solid fa-chevron-left"></i> تواصل معنا</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>بيانات التواصل</h4>
+                    <div class="footer-contact-info">
+                        <div>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>الفيوم - العبودي - بجوار مستشفى الندى - الدور الأول</span>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-phone"></i>
+                            <span dir="ltr">01016006205</span>
+                        </div>
+                        <div>
+                            <i class="fa-regular fa-clock"></i>
+                            <span>السبت - الخميس: 4 م - 10 م</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2024 أنوثة كلينك - د. آية محمد مصطفى. جميع الحقوق محفوظة <span class="heart"><i class="fa-solid fa-heart"></i></span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==================== BACK TO TOP ==================== -->
+    <button class="back-to-top" id="backToTop" title="العودة للأعلى">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- ==================== WHATSAPP FLOAT ==================== -->
+    <a href="https://wa.me/201016006205?text=مرحبا، أرغب في الاستفسار عن خدمات أنوثة كلينك" target="_blank" class="whatsapp-float" title="تواصلي عبر واتساب">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        // ==================== INITIALIZE AOS ANIMATIONS ====================
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 80,
+            easing: 'ease-out-cubic'
+        });
+
+        // ==================== NAVBAR SCROLL EFFECT ====================
+        const navbar = document.getElementById('navbar');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 80) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+
+            // Active link on scroll
+            let current = '';
+            const sections = document.querySelectorAll('section[id]');
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 150;
+                if (window.scrollY >= sectionTop) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // ==================== MOBILE MENU ====================
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuOverlay = document.getElementById('menuOverlay');
+
+        function toggleMenu() {
+            hamburger.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+            menuOverlay.classList.toggle('active');
+            document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
+        }
+
+        function closeMenu() {
+            hamburger.classList.remove('active');
+            mobileMenu.classList.remove('active');
+            menuOverlay.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        hamburger.addEventListener('click', toggleMenu);
+        menuOverlay.addEventListener('click', closeMenu);
+
+        // Close menu when clicking a link
+        document.querySelectorAll('.mobile-menu .nav-link').forEach(link => {
+            link.addEventListener('click', closeMenu);
+        });
+
+        // ==================== SMOOTH SCROLL ====================
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const href = this.getAttribute('href');
+                if (href === '#' || href === '#booking' && this.id === 'heroWhatsapp') return;
+
+                const target = document.querySelector(href);
+                if (target) {
+                    e.preventDefault();
+                    const offsetTop = target.offsetTop - 80;
+                    window.scrollTo({
+                        top: offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // ==================== BACK TO TOP ====================
+        const backToTop = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 500) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        });
+
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // ==================== WHATSAPP BOOKING FORM ====================
+        const bookingForm = document.getElementById('bookingForm');
+        const phoneNumber = '201016006205';
+
+        bookingForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const name = document.getElementById('patientName').value.trim();
+            const phone = document.getElementById('patientPhone').value.trim();
+            const service = document.getElementById('serviceType').value;
+            const date = document.getElementById('appointmentDate').value.trim() || 'لم يتم تحديده';
+
+            const message =
+                `🌸 *حجز موعد - أنوثة كلينك* 🌸\n\n` +
+                `👩 *اسم المريضة:* ${name}\n` +
+                `📱 *رقم الهاتف:* ${phone}\n` +
+                `💉 *نوع الخدمة:* ${service}\n` +
+                `📅 *الموعد المناسب:* ${date}\n\n` +
+                `أرجو تأكيد الحجز، شكراً 🌷`;
+
+            const encodedMessage = encodeURIComponent(message);
+            const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+
+            window.open(whatsappURL, '_blank');
+
+            // Reset form
+            setTimeout(() => bookingForm.reset(), 500);
+        });
+
+        // Hero WhatsApp button
+        document.getElementById('heroWhatsapp').addEventListener('click', function(e) {
+            e.preventDefault();
+            const message = encodeURIComponent('مرحباً، أرغب في حجز موعد في أنوثة كلينك 🌸');
+            window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
+        });
+
+        // ==================== NAVBAR INITIAL STATE ====================
+        // Check initial scroll position
+        if (window.scrollY > 80) {
+            navbar.classList.add('scrolled');
+        }
+
+        // ==================== COUNTER ANIMATION (for badges if needed) ====================
+        function animateCounter(element, target, duration = 2000) {
+            let start = 0;
+            const increment = target / (duration / 16);
+            const timer = setInterval(() => {
+                start += increment;
+                if (start >= target) {
+                    element.textContent = target + '+';
+                    clearInterval(timer);
+                } else {
+                    element.textContent = Math.floor(start) + '+';
+                }
+            }, 16);
+        }
+
+        // ==================== INPUT ANIMATION ====================
+        document.querySelectorAll('.form-control').forEach(input => {
+            input.addEventListener('focus', function() {
+                this.parentElement.classList.add('focused');
+            });
+            input.addEventListener('blur', function() {
+                this.parentElement.classList.remove('focused');
+            });
+        });
+
+        // ==================== PARALLAX EFFECT ON HERO ====================
+        window.addEventListener('scroll', () => {
+            const scrolled = window.scrollY;
+            const heroBg = document.querySelector('.hero-bg img');
+            if (heroBg && scrolled < window.innerHeight) {
+                heroBg.style.transform = `translateY(${scrolled * 0.3}px) scale(${1 + scrolled * 0.0002})`;
+            }
+        });
+
+        // ==================== SERVICE CARD 3D TILT (subtle) ====================
+        document.querySelectorAll('.service-card').forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                const centerX = rect.width / 2;
+                const centerY = rect.height / 2;
+                const rotateX = (y - centerY) / 30;
+                const rotateY = (centerX - x) / 30;
+                card.style.transform = `translateY(-15px) perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = '';
+            });
+        });
+
+        console.log('%c🌸 أنوثة كلينك 🌸', 'color: #C21875; font-size: 24px; font-weight: bold;');
+        console.log('%cتم تطوير الموقع بعناية فائقة', 'color: #E91E63; font-size: 14px;');
+    </script>
+
+    <!-- ==================== SCHEMA.ORG STRUCTURED DATA ==================== -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "Physician",
+                "name": "د. آية محمد مصطفى",
+                "medicalSpecialty": ["Gynecology", "Obstetrics", "Cosmetic Gynecology"],
+                "availableService": [
+                    "متابعة الحمل",
+                    "متابعة صحة المرأة",
+                    "التجميل النسائي",
+                    "أمراض النساء",
+                    "متابعة ما بعد الولادة",
+                    "الاستشارات الطبية"
+                ],
+                "telephone": "+201016006205",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "العبودي - بجوار مستشفى الندى - الجهة المقابلة للفيوم سكان - الدور الأول",
+                    "addressLocality": "الفيوم",
+                    "addressCountry": "EG"
+                },
+                "memberOf": {
+                    "@type": "MedicalClinic",
+                    "name": "أنوثة كلينك",
+                    "image": "",
+                    "telephone": "+201016006205",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "streetAddress": "العبودي - بجوار مستشفى الندى - الدور الأول",
+                        "addressLocality": "الفيوم",
+                        "addressCountry": "EG"
+                    }
+                }
+            },
+            {
+                "@type": "MedicalClinic",
+                "name": "أنوثة كلينك",
+                "description": "عيادة أنوثة كلينك للتجميل النسائي والتوليد مع د. آية محمد مصطفى",
+                "telephone": "+201016006205",
+                "url": window.location.href,
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "الفيوم - العبودي - بجوار مستشفى الندى - الجهة المقابلة للفيوم سكان - الدور الأول",
+                    "addressLocality": "الفيوم",
+                    "addressCountry": "EG"
+                },
+                "openingHoursSpecification": [
+                    {
+                        "@type": "OpeningHoursSpecification",
+                        "dayOfWeek": ["Saturday", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"],
+                        "opens": "16:00",
+                        "closes": "22:00"
+                    }
+                ],
+                "sameAs": ["https://www.facebook.com/DrAyaMohamedcenterfay"]
+            }
+        ]
+    }
+    </script>
+</body>
+</html>
